@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+}
+
+header {
+  background-color: #264653;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Cards (Homepage & Sections) */
+.cards, .cards-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card, .card-small {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover, .card-small:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background-color: #fff;
+}
+
+.card img, .card-small img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card img {
+  height: 150px;
+}
+
+.card-small img {
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.card h3, .card-small h3 {
+  margin: 10px 0 5px 0;
+}
+
+.card p, .card-small p {
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+}
+
+/* Destination Images */
+.destination-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* Section Spacing */
+.section {
+  margin-bottom: 30px;
+}
+
+main h2, main h3 {
+  color: #264653;
+  margin-top: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
