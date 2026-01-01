@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HolidayGo | Book Flights, Stays & Experiences</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f4f6f9;
+      color: #222;
+    }
+    header {
+      background: linear-gradient(135deg, #0f62fe, #12b5cb);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 42px; margin-bottom: 10px; }
+    header p { font-size: 18px; opacity: 0.95; }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 25px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 6px;
+    }
+    nav a:hover { background: rgba(255,255,255,0.2); }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .search-section {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tab {
+      padding: 10px 16px;
+      border-radius: 20px;
+      background: #eef2f7;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .tab.active { background: #0f62fe; color: white; }
+
+    .search-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    input, select, button {
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+    button.primary {
+      background: #0f62fe;
+      color: white;
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    section { margin-top: 70px; }
+    section h2 { font-size: 30px; margin-bottom: 20px; }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07);
+    }
+    .card h3 { color: #0f62fe; margin-bottom: 10px; }
+
+    .highlight {
+      background: linear-gradient(135deg, #0f62fe, #12b5cb);
+      color: white;
+      padding: 50px 30px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 40px 20px;
+      margin-top: 100px;
+      text-align: center;
+    }
+    footer a { color: #aaa; text-decoration: none; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HolidayGo</h1>
+  <p>Plan, book & experience the world — solo or together</p>
+  <nav>
+    <a href="#flights">Flights</a>
+    <a href="#stays">Stays</a>
+    <a href="#activities">Activities</a>
+    <a href="#solo">Solo Travel</a>
+    <a href="#group">Group Travel</a>
+  </nav>
+</header>
+
+<div class="container">
+
+  <div class="search-section" id="flights">
+    <div class="tabs">
+      <div class="tab active">Flights</div>
+      <div class="tab">Stays</div>
+      <div class="tab">Experiences</div>
+      <div class="tab">Packages</div>
+    </div>
+    <div class="search-grid">
+      <input placeholder="From" />
+      <input placeholder="To" />
+      <input type="date" />
+      <input type="date" />
+      <select>
+        <option>1 Traveller</option>
+        <option>2 Travellers</option>
+        <option>Group Travel</option>
+      </select>
+      <button class="primary">Search</button>
+    </div>
+  </div>
+
+  <section id="stays">
+    <h2>Accommodation Worldwide</h2>
+    <div class="cards">
+      <div class="card"><h3>Hotels</h3><p>From budget to luxury stays across the globe.</p></div>
+      <div class="card"><h3>Hostels</h3><p>Perfect for solo travellers and social stays.</p></div>
+      <div class="card"><h3>Apartments</h3><p>Ideal for families and group travel.</p></div>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2>Activities & Experiences</h2>
+    <div class="cards">
+      <div class="card"><h3>Adventure</h3><p>Hiking, scuba diving, safaris and more.</p></div>
+      <div class="card"><h3>Culture</h3><p>Museums, history tours, and local traditions.</p></div>
+      <div class="card"><h3>Food</h3><p>Street food tours and cooking classes.</p></div>
+    </div>
+  </section>
+
+  <section id="solo">
+    <div class="highlight">
+      <h2>Solo Traveller Mode</h2>
+      <p>Safe stays, social activities, curated itineraries and local meetups — travel confidently on your own.</p>
+    </div>
+  </section>
+
+  <section id="group">
+    <h2>Group Travel Made Easy</h2>
+    <div class="cards">
+      <div class="card"><h3>Shared Planning</h3><p>Create trips and invite friends.</p></div>
+      <div class="card"><h3>Split Costs</h3><p>Track expenses and divide costs easily.</p></div>
+      <div class="card"><h3>Vote Together</h3><p>Decide on flights, stays and activities.</p></div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 HolidayGo</p>
+  <p>
+    <a href="#">About</a> | <a href="#">Contact</a> | <a href="#">Privacy</a> | <a href="#">Terms</a>
+  </p>
+</footer>
+
+</body>
+</html>
