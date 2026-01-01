@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bali - HolidayGo</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    main h2, main h3 { color: #264653; margin-top: 20px; }
+    .destination-image { width: 100%; max-width: 700px; display: block; margin: 20px auto; border-radius: 10px; }
+    .section { margin-bottom: 30px; }
+    .cards-small { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+    .cards-small .card-small { border: 1px solid #ddd; border-radius: 10px; padding: 10px; width: 200px; text-align: center; background-color: #f8f8f8; text-decoration: none; color: #333; transition: transform 0.2s, box-shadow 0.2s; }
+    .cards-small .card-small:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); background-color: #fff; }
+    .cards-small img { width: 100%; border-radius: 10px; height: 120px; object-fit: cover; margin-bottom: 5px; }
+  </style>
 </head>
 <body>
   <header>
@@ -18,7 +27,11 @@
   </header>
 
   <main>
-    <section>
+    <!-- Destination Image -->
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Bali" class="destination-image">
+
+    <!-- Explore Section -->
+    <section class="section">
       <h2>Explore Bali</h2>
       <p>Enjoy Bali's beaches, temples, lush nature, and vibrant culture. Ideal for solo travelers or groups.</p>
       <ul>
@@ -28,13 +41,78 @@
         <li>Nusa Islands: Island hopping, snorkeling</li>
       </ul>
     </section>
+
+    <!-- Flights Section -->
+    <section class="section">
+      <h2>Flights to Bali</h2>
+      <div class="cards-small">
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="Flight 1">
+          <h3>London → Denpasar</h3>
+          <p>From $500 | 16h 30min</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1582719478180-77ec015ef7dc" alt="Flight 2">
+          <h3>Singapore → Bali</h3>
+          <p>From $120 | 2h 50min</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1526470608268-f674ce90ebd4" alt="Flight 3">
+          <h3>Tokyo → Denpasar</h3>
+          <p>From $400 | 7h 20min</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Hotels Section -->
+    <section class="section">
+      <h2>Hotels in Bali</h2>
+      <div class="cards-small">
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1560347876-aeef00ee58a1" alt="Hotel 1">
+          <h3>Ubud Luxury Resort</h3>
+          <p>From $200/night | 5-star</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1559181567-c3190ca9959b" alt="Hotel 2">
+          <h3>Kuta Beach Hotel</h3>
+          <p>From $120/night | 4-star</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1501117716987-c8e2f2aa2c79" alt="Hotel 3">
+          <h3>Seminyak Boutique Stay</h3>
+          <p>From $90/night | 3-star</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section class="section">
+      <h2>Activities in Bali</h2>
+      <div class="cards-small">
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1584306672031-cf515f795c8b" alt="Activity 1">
+          <h3>Temple Tours</h3>
+          <p>$40 | 3h guided tour</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1505839673365-e3971f8d9184" alt="Activity 2">
+          <h3>Surfing Lessons</h3>
+          <p>$50 | 2h</p>
+        </a>
+        <a href="#" class="card-small">
+          <img src="https://images.unsplash.com/photo-1526481280690-6b9b04f118ee" alt="Activity 3">
+          <h3>Island Hopping</h3>
+          <p>$70 | Full day</p>
+        </a>
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <p>© 2026 HolidayGo</p>
-    <p>
-      <a href="index.html">Home</a> | <a href="#">About</a> | <a href="#">Contact</a>
-    </p>
+    <p><a href="index.html" style="color:white;">Home</a></p>
   </footer>
 </body>
 </html>
